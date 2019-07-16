@@ -1,0 +1,76 @@
+/* 7.4 - ccr-sports-gallery 
+---------------------------------------------------------------------- */
+
+#ccr-sports-gallery {
+  overflow: hidden;
+}
+
+#ccr-sports-gallery .featured-sports-news {
+  margin-top: 20px;
+  height: 504px;
+  width: 48.5%;
+  float: left;
+}
+
+#ccr-sports-gallery .featured-sports-news img {
+  width: 100%;
+}
+
+#ccr-sports-gallery .featured-sports-news-img {
+  height: 252px;
+}
+
+#ccr-sports-gallery .featured-sports-news-post {
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  position: relative;
+  height: 252px;
+}
+
+#ccr-sports-gallery h5 {
+  line-height: 20px;
+  font-size: 1.2em;
+}
+
+#ccr-sports-gallery .featured-sports-news-post h5 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#ccr-sports-gallery .like-comment-readmore {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#ccr-sports-gallery ul {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#ccr-sports-gallery li {
+  width: 22.75%;
+  float: left;
+  margin: 20px 0;
+}
+
+#ccr-sports-gallery li h5 a {
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+}
+
+#ccr-sports-gallery li:nth-child(-n+2) {
+  margin-top: 10px;
+}
+
+#ccr-sports-gallery li:nth-child(-n+5):nth-child(odd),
+#ccr-sports-gallery li:nth-child(-n+6):nth-child(even),
+#ccr-sports-gallery li:nth-child(n+8) {
+  margin-left: 3%;
+}
+
+#ccr-sports-gallery li img {
+  width: 100%;
+}

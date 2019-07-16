@@ -1,0 +1,123 @@
+<app-header1></app-header1>
+<div class="gray-bg">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+     <div class="form">
+        <h1>Add Team</h1>
+        <form #AddTeamsComponent="ngForm" (ngSubmit)="onSubmit(AddTeamsComponent.value)"><br>
+           <div class="form-group">
+            <label for="Id">ID:</label>
+            <input type="number" id="id" placeholder="23" class="form-control" name="id" ngControl="id" ngModel disabled  #id="ngModel">
+          </div>
+          <div class='form-group'>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="Chennai Super Kings" class="form-control" name="name" ngControl="name" pattern="[a-zA-Z ]+$" ngModel required minlength="4" #name="ngModel">
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+              <div *ngIf="name.errors.minlength">Team name must be atleast 4 characters long</div>
+              <div *ngIf="name.errors.required">Name is required</div>
+              <div *ngIf="name.errors?.pattern">Name cannot contain numbers</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="no_players">Number of Players:</label>
+            <input type="number" id="no_players" placeholder="23" class="form-control" name="no_players" ngControl="no_players" ngModel required  #no_players="ngModel">
+            <div *ngIf="no_players.invalid && (no_players.dirty || no_players.touched)" class="alert alert-danger">
+              <div *ngIf="no_players.errors.required">Number of Players is required</div>
+            </div>
+          </div>
+         <div class="form-group">
+            <label for="Flag">Flag:</label>
+            <input type="number" id="flag" min="0" max="1" placeholder="1" class="form-control" name="flag" ngControl="flag" ngModel required  #flag="ngModel">
+            <div *ngIf="flag.invalid && (flag.dirty || flag.touched)" class="alert alert-danger">
+              <div *ngIf="flag.errors.required">Flag is required</div>
+              <div *ngIf="flag.errors?.max">Flag cannot be greater than 1</div>
+              <div *ngIf="flag.errors?.min">Flag cannot be less than 0</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="sport_id">Sport Id:</label>
+            <input type="number" id="sport_id" placeholder="2311" class="form-control" name="sport_id" ngControl="sport_id" ngModel disabled  #sport_id="ngModel">
+          </div>
+           <div class='form-group'>
+            <label for="achievement">Achievements:</label>
+            <textarea rows="4" cols="50" name="achievement" id="achievement"  required class="form-control" name="achievement" ngControl="achievement"  ngModel #achievement="ngModel"></textarea>
+            <div *ngIf="achievement.invalid && (achievement.dirty || achievement.touched)" class="alert alert-danger">
+              <div *ngIf="achievement.errors.required">Achievements is required</div>
+              
+            </div>
+          </div>
+           <div class='form-group'>
+            <label for="home_ground">Home Ground:</label>
+            <input type="text" id="home_ground" required placeholder="M A Chidambaram Stadium" class="form-control" name="home_ground" ngControl="home_ground" pattern="[a-zA-Z0-9 ]+$" ngModel required minlength="4" #home_ground="ngModel">
+            <div *ngIf="home_ground.invalid && (home_ground.dirty || home_ground.touched)" class="alert alert-danger">
+              <div *ngIf="home_ground.errors.minlength">Home Ground Name must be atleast 4 characters long</div>
+              <div *ngIf="home_ground.errors.required">Home Ground Name is required</div>
+              <div *ngIf="home_ground?.pattern">Home Ground Name cannot contain symbols</div>
+            </div>
+          </div>
+           <div class='form-group'>
+            <label for="description">Description:</label>
+            <textarea rows="4" cols="50" name="comment" id="description" placeholder="atleast 250 characters..." required class="form-control" name="description" ngControl="description"  ngModel required minlength="250" #description="ngModel"></textarea>
+            <div *ngIf="description.invalid && (description.dirty || description.touched)" class="alert alert-danger">
+              <div *ngIf="description.errors.minlength">Description must be atleast 250 characters long</div>
+              <div *ngIf="description.errors.required">Description is required</div>
+             </div>
+          </div>
+           <div class='form-group'>
+            <label for="type">Type:</label>
+            <input type="text" id="type" required class="form-control" name="name" ngControl="type" pattern="[a-zA-Z ]+$" ngModel required minlength="4" #type="ngModel">
+            <div *ngIf="type.invalid && (type.dirty || type.touched)" class="alert alert-danger">
+              <div *ngIf="type.errors.minlength">Type must be atleast 4 characters long</div>
+              <div *ngIf="type.errors.required">Type is required</div>
+              <div *ngIf="type.errors?.pattern">Type cannot contain numbers</div>
+            </div>
+          </div>
+         <div class="form-group">
+            <label for="city_id">City Id:</label>
+            <input type="number" id="city_id" class="form-control" name="city_id" ngControl="city_id" ngModel required  #city_id="ngModel">
+            <div *ngIf="city_id.invalid && (city_id.dirty || city_id.touched)" class="alert alert-danger">
+              <div *ngIf="city_id.errors.required">City Id is required</div>
+             </div>
+          </div>
+          <div class="form-group">
+            <label for="state_id">State Id:</label>
+            <input type="number" id="state_id" class="form-control" name="state_id" ngControl="state_id" ngModel required  #state_id="ngModel">
+            <div *ngIf="state_id.invalid && (state_id.dirty || state_id.touched)" class="alert alert-danger">
+              <div *ngIf="state_id.errors.required">State Id is required</div>
+            </div>
+          </div>
+           <div class="form-group">
+            <label for="country_id">Country Id:</label>
+            <input type="number" id="country_id" class="form-control" name="country_id" ngControl="country_id" ngModel required  #country_id="ngModel">
+            <div *ngIf="country_id.invalid && (country_id.dirty || country_id.touched)" class="alert alert-danger">
+              <div *ngIf="country_id.errors.required">Country Id is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="status">Status:</label>
+            <input type="number" id="status"  class="form-control" name="status" ngControl="status" ngModel required  #status="ngModel">
+            <div *ngIf="status.invalid && (status.dirty || status.touched)" class="alert alert-danger">
+              <div *ngIf="status.errors.required">Status is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+              <label for="created">Created:</label>
+              <input type="datetime-local" id="created" class="form-control" name="created" ngControl="created" ngModel disabled #created="ngModel">
+          </div>
+          <div class="form-group">
+              <label for="modified">Modified:</label>
+              <input type="datetime-local" id="modified" class="form-control" name="modified" ngControl="modified" ngModel disabled #modified="ngModel">
+          </div>
+        
+          <div class="form-group">
+            <button class="form-control btn btn-primary btn-send" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+<app-footer></app-footer>
+

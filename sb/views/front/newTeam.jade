@@ -1,0 +1,46 @@
+extends layout/base 
+block content
+    .container
+        section#ccr-main-section
+            .container
+                section.col-md-12
+                    .current-page
+                        a(href='/')
+                            i.fa.fa-home
+                            i.fa.fa-angle-double-right
+                            |  Create Team
+                    // / .current-page
+                    section.ccr-team-form.col-md-10.col-md-offset-1
+                        - if (messages.msg_error) 
+                            .alert.alert-danger.alert-dismissable 
+                                button.close(type='button', data-dismiss='alert', aria-hidden='true') 
+                                    | ×
+                                h4
+                                    i.icon.fa.fa-ban
+                                    | Alert! 
+                                | !{messages.msg_error}
+                        form#commentform(action='/front/newTeam', method='post')
+                            input#author(name='name', type='text', placeholder='Team Name', value='', required='')
+                            input#email(name='sport_id', type='text', placeholder='Sport', value='',required='')
+                            input#author(name='no_players', type='text', placeholder='Number of Playes', value='',required='')
+                            input#email(name='flag', type='file', placeholder='Flag', value='',required='')
+                            input#url(name='description', type='text', placeholder='Description', value='',required='')
+                            input#url(name='achivment', type='text', placeholder='Achivement', value='',required='')
+                            input#url(name='home_ground', type='text', placeholder='Home Ground', value='',required='')
+                            input#author(name='type', type='text', placeholder='Type', value='',required='')
+                            select#email(name='city_id')
+                                option(value='NULL', disabled='', selected='selected') City
+                                option(value='pune') Pune
+                            //input#email(name='city_id', type='text', placeholder='City', value='',required='')
+                            select#author(name='state_id')
+                                option(value='NULL', disabled='', selected='selected') State
+                                option(value='maharashtra') Maharashtra
+                            //input#author(name='state_id', type='text', placeholder='State', value='',required='')
+                            select#email(name='country_id')
+                                option(value='NULL', disabled='', selected='selected') Country
+                                option(value='india') India
+                            //input#email(name='country_id', type='text', placeholder='Country', value='',required='')
+                            //input#url(name='status', type='password', placeholder='Status', value='',required='')
+                            //input#url(name='created', type='password', placeholder='Created', value='',required='')
+                            //input#url(name='modified', type='password', placeholder='Modified', value='',required='')
+                            input#submit.pull-right(name='submit', type='submit', value='Create')

@@ -1,0 +1,33 @@
+
+/* 6.0 - ccr-footer
+---------------------------------------------------------------------- */
+#ccr-footer{
+	background-color: #2cb2bc;
+	min-height: 40px;
+}
+ .container{
+	position: relative;
+}
+.copyright, .copyright a{
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+}
+.footer-social-icons{
+	position: absolute;
+	right: 0;
+	top:0;
+	height: 40px;
+	width: 160px;
+}
+.footer-social-icons li a{
+	font-size: 1.35em;
+	color: #fff;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	width: 40px;
+}
+
+/* 6.0 - ccr-footer End
+---------------------------------------------------------------------- */

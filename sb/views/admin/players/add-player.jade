@@ -1,0 +1,114 @@
+extends ../layout/base 
+block content 
+	// Big container
+	.container
+		.row
+			.col-sm-8.col-sm-offset-2
+			// Wizard container
+			.wizard-container
+				#wizardProfile.card.wizard-card(data-color='orange')
+				form(action='', method='')
+					// You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"
+					.wizard-header
+					h3
+						b BUILD
+						|  YOUR PROFILE 
+						br
+						small This information will let us know more about you.
+					.wizard-navigation
+					ul
+						li
+						a(href='#about', data-toggle='tab') About
+						li
+						a(href='#account', data-toggle='tab') Account
+						li
+						a(href='#address', data-toggle='tab') Address
+					.tab-content
+					#about.tab-pane
+						.row
+						h4.info-text  Let's start with the basic information (with validation)
+						.col-sm-4.col-sm-offset-1
+							.picture-container
+							.picture
+								img#wizardPicturePreview.picture-src(src='assets/img/default-avatar.png', title='')
+								input#wizard-picture(type='file')
+							h6 Choose Picture
+						.col-sm-6
+							.form-group
+							label
+								| First Name 
+								small (required)
+							input.form-control(name='firstname', type='text', placeholder='Andrew...')
+							.form-group
+							label
+								| Last Name 
+								small (required)
+							input.form-control(name='lastname', type='text', placeholder='Smith...')
+						.col-sm-10.col-sm-offset-1
+							.form-group
+							label
+								| Email 
+								small (required)
+							input.form-control(name='email', type='email', placeholder='andrew@creative-tim.com')
+					#account.tab-pane
+						h4.info-text  What are you doing? (checkboxes) 
+						.row
+						.col-sm-10.col-sm-offset-1
+							.col-sm-4
+							.choice(data-toggle='wizard-checkbox')
+								input(type='checkbox', name='jobb', value='Design')
+								.icon
+								i.fa.fa-pencil
+								h6 Design
+							.col-sm-4
+							.choice(data-toggle='wizard-checkbox')
+								input(type='checkbox', name='jobb', value='Code')
+								.icon
+								i.fa.fa-terminal
+								h6 Code
+							.col-sm-4
+							.choice(data-toggle='wizard-checkbox')
+								input(type='checkbox', name='jobb', value='Develop')
+								.icon
+								i.fa.fa-laptop
+								h6 Develop
+					#address.tab-pane
+						.row
+						.col-sm-12
+							h4.info-text  Are you living in a nice area? 
+						.col-sm-7.col-sm-offset-1
+							.form-group
+							label Street Name
+							input.form-control(type='text', placeholder='5h Avenue')
+						.col-sm-3
+							.form-group
+							label Street Number
+							input.form-control(type='text', placeholder='242')
+						.col-sm-5.col-sm-offset-1
+							.form-group
+							label City
+							input.form-control(type='text', placeholder='New York...')
+						.col-sm-5
+							.form-group
+							label Country
+							br
+							select.form-control(name='country')
+								option(value='Afghanistan')  Afghanistan 
+								option(value='Albania')  Albania 
+								option(value='Algeria')  Algeria 
+								option(value='American Samoa')  American Samoa 
+								option(value='Andorra')  Andorra 
+								option(value='Angola')  Angola 
+								option(value='Anguilla')  Anguilla 
+								option(value='Antarctica')  Antarctica 
+								option(value='...') ...
+					.wizard-footer.height-wizard
+					.pull-right
+						input.btn.btn-next.btn-fill.btn-warning.btn-wd.btn-sm(type='button', name='next', value='Next')
+						input.btn.btn-finish.btn-fill.btn-warning.btn-wd.btn-sm(type='button', name='finish', value='Finish')
+					.pull-left
+						input.btn.btn-previous.btn-fill.btn-default.btn-wd.btn-sm(type='button', name='previous', value='Previous')
+					.clearfix
+			// wizard container
+		// end row
+		// big container

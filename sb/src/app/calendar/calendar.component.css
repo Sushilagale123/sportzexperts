@@ -1,0 +1,42 @@
+/* 4.3 - calendar
+---------------------------------------------------------------------- */
+#calendar{
+	width: 100%;
+	text-align:center;
+	margin-bottom: 40px;
+}
+#calendar caption{
+	text-align: center;;
+	font-weight: bold;
+	line-height:40px;
+	font-size:1.25em;
+	background: #f2f2f4;
+	height:40px;
+	border: 1px solid  #e3e2e2;
+	border-bottom: none;
+}
+#calendar th{
+	height:40px;
+	text-align:center;
+	border: 1px solid #1fa3ad;
+}
+#calendar td{
+	height:40px;
+	line-height:40px;
+	border: 1px solid #d7d7d7;
+}
+#calendar th,
+#calendar #today{
+	color: #FFF;
+	background-color:#2cb2bc;
+}
+#calendar a{
+	color: #2cb2bc;
+	display: inline-block;
+	line-height: 40px;
+	width: 100%;
+}
+#calendar a:hover{
+	color: #FFF;
+	background-color:#2cb2bc;
+}

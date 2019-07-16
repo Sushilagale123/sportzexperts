@@ -1,0 +1,71 @@
+extends ../layout/base 
+block content 
+	section.content-header 
+		h1 
+			| Blank Page
+			small it all starts here
+		ol.breadcrumb 
+			li 
+				a(href='#') 
+					i.fa.fa-dashboard
+					| Level 
+			li.active Here 
+	section.content
+		.box
+			.box-header.with-border
+				h3.box-title
+					| Country
+				.box-tools.pull-right
+					button(type='button', data-widget='collapse', data-toggle='tooltip',title='collapse').btn.btn-box-tool
+						i.fa.fa-minus
+					
+			.box-body
+				form(role='form',method='post' action='/countries/add')
+					.row
+						.col-xs-6
+							.box-body
+								- if (messages.msg_error) 
+									.alert.alert-danger.alert-dismissable 
+										button.close(type='button', data-dismiss='alert', aria-hidden='true') 
+											| ×
+										h4
+											i.icon.fa.fa-ban
+											| Alert! 
+										| !{messages.msg_error}
+								.form-group
+									label
+										| Name
+									input(type='text',name='country',placeholder='Enter Country Name', autofocus).form-control
+								.form-group
+									label
+										| Iso Alpha2
+									input(type='text',name='iso_alpha2',placeholder='Enter Iso Alpha2').form-control
+								.form-group
+									label
+										| Ios Alpha3
+									input(type='text',name='iso_alpha3',placeholder='Enter Iso Alpha3').form-control
+								.form-group
+									label
+										| Iso Numeric
+									input(type='text',name='iso_numeric',placeholder='Enter Iso Numeric').form-control
+								.form-group
+									label
+										| Country code
+									input(type='text',name='country_code',placeholder='Enter country Code').form-control
+								.form-group
+									label
+										| Currency Name 
+									input(type='text',name='currency_name',placeholder='Enter Currency Name').form-control
+								.form-group
+									label
+										| Currency Symbol
+									input(type='text',name='currency_symbol',placeholder='Enter Currency Symbol').form-control
+								.form-group
+									label
+										| Flag
+									input(type='text',name='flag',placeholder='Enter Flag').form-control
+							.box-footer
+								button(type='submit').btn.btn-primary
+									| Submit
+								a(href='/countries').btn.btn-primary.pull-right
+									| Back

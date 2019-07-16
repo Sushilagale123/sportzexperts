@@ -1,0 +1,339 @@
+extends layout/base 
+block content
+    section#ccr-main-section
+        .container
+            section.col-md-12
+                .current-page
+                    a(href='/')
+                        i.fa.fa-home
+                        i.fa.fa-angle-double-right
+                        |  Create Profile
+                // / .current-page
+                section.ccr-team-form.col-md-10.col-md-offset-1
+                    // multistep form
+                    form#msform
+                        // progressbar
+                        ul#progressbar
+                            li.active Personal Details
+                            |       
+                            li Family Details
+                            |       
+                            li Health Details
+                            |       
+                            li Educational Details
+                            |       
+                            li Occupational Details
+                            |       
+                            li Sport Details
+                            |       
+                            li Contact Details
+                                                    
+                        // fieldsets
+                        fieldset
+                            h2.fs-title Create your account
+                            |       
+                            h3.fs-subtitle This is step 1
+                            
+                            image#profileImage.email(src="http://lorempixel.com/100/100")
+                            input#imageUpload(type="file", name="profile_photo", placeholder="Photo", required="", capture="")
+                            
+                            input#url(type="text", name="fname", placeholder="Full Name")
+                            
+                            select#column3(name='age',  size='1' )
+                                option(value="age") Age
+                            
+                            select#column3(name='religion',  size='1' )
+                                option(value="religion") Religion
+
+                            input#column3(type="text", name="other_religion", placeholder="Other")
+                            
+                            select#author(name='caste',  size='1' )
+                                option(value="caste") Caste
+                                               
+                            input#email(type="text", name="other_caste", placeholder="Other Caste")
+
+                            select#author(name='marital_status',  size='1' )
+                                option(value="marital_staus") Marital Status
+                                               
+                            input#email(type="number", name="children", placeholder="Children")
+                            
+                            select#author(name='star',  size='1' )
+                                option(value="star") Star
+                                               
+                            input#email(type="text", name="other_star", placeholder="Other Star")
+
+                            select#author(name='rassi_moonsign',  size='1' )
+                                option(value="rassi_moonsign") Rassi
+                                               
+                            input#email(type="text", name="other_moonsign", placeholder="Other Moonsign")
+
+                            select#author(name='zodiac_starsign',  size='1' )
+                                option(value="zodiac_starsign") Zodiac Starsign
+                                               
+                            input#email(type="text", name="other_zodiac", placeholder="Other Zodiac") 
+                            |       
+                            textarea#author(name="habits", cols="30", rows="5", placeholder="Habits")   
+                            
+                            textarea#email(name="hobbies", cols="30", rows="10", placeholder="Hobbies")
+                            |                           
+                            input.next.action-button(type="button", name="next", value="Next")
+                        |   
+                        fieldset
+                            h2.fs-title Family Details
+                            | 
+                            h3.fs-subtitle This is step 2
+                            |       
+                            input#url(type="text", name="father_name", placeholder="Father Full Name")
+                            |       
+                            input#url(type="text", name="mother_name", placeholder="Mother Full Name")
+                            
+                            select#author(name="father_status", cols="30", rows="5")
+                                option(value="father_status") Father Status
+                            
+                            select#email(name="mother_status", cols="30", rows="5")
+                                option(value="mother_status") Mother Status
+                            
+                            select#author(name="no_of_brothers", cols="30", rows="5")
+                                option(value="no_of_brothers") No of Brothers
+                            
+                            select#email(name="brother_married", cols="30", rows="5")
+                                option(value="brother_married") Brother Married 
+                            
+                            select#author(name="no_of_sisters", cols="30", rows="5")
+                                option(value="no_of_sisters") No of Sisters
+                            
+                            select#email(name="sister_married", cols="30", rows="5")
+                                option(value="sister_married") Sister Married 
+                            
+                            select#author(name="family_type", cols="30", rows="5")
+                                option(value="family_type") Family Type 
+                            
+                            input#email(type="text", name="family_value", placeholder="Family Value")
+                            
+                            textarea#author(name="about_my_family", cols="30", rows="5", placeholder="About Family")
+
+                            input#email(type="text", name="family_status", placeholder="Family Status")
+                            |       
+                            input.previous.action-button(type="button", name="previous", value="Previous")
+                            |       
+                            input.next.action-button(type="button", name="next", value="Next")
+                        |   
+                        fieldset
+                            h2.fs-title Helth Details
+                            |       
+                            h3.fs-subtitle We will never sell it
+                            |       
+                            select#author(name="body_type", cols="30", rows="5")
+                                option(value="body_type") Body Type 
+                            
+                            input#email(type="text", name="complexion", placeholder="Complexion")
+                            
+                            select#author(name="height", cols="30", rows="5")
+                                option(value="height") Height
+
+                            select#email(name="weight", cols="30", rows="5")
+                                option(value="weight") Weight
+                            
+                            select#author(name="smoking_habits", cols="30", rows="5")
+                                option(value="smoking_habits") Smoking Habits
+                            
+                            select#email(name="drinking_habits", cols="30", rows="5")
+                                option(value="drinking_habits") Drinking Habits
+                            
+                            select#author(name="eating_habits", cols="30", rows="5")
+                                option(value="eating_habits") Eating Habits
+                            
+                            select#email(name="physical_status", cols="30", rows="5")
+                                option(value="physical_status") Physical Status 
+                            
+                            input#url(type="", name="lname", placeholder="Last Name")
+                            |       
+                            input.previous.action-button(type="button", name="previous", value="Previous")
+                            |       
+                            input.next.action-button(type="button", name="next", value="Next")
+                        |   
+                        fieldset
+                            h2.fs-title Educational Details
+                            |       
+                            h3.fs-subtitle We will never sell it
+                            |       
+                            select#author(name="Education", cols="30", rows="5")
+                                option(value="education") Education 
+                            
+                            input#email(type="text", name="other_education", placeholder="Other Education")
+                            
+                            input#url(type="text", name="college", placeholder="College Name")
+                            
+                            textarea#url(name="education_in_detail", cols="30", rows="10", placeholder="Education in Details")
+                            |       
+                            input.previous.action-button(type="button", name="previous", value="Previous")
+                            |       
+                            input.next.action-button(type="button", name="next", value="Next")
+                        |   
+                        fieldset
+                            h2.fs-title Occupational Details
+                            |       
+                            h3.fs-subtitle We will never sell it
+                            |       
+                            select#author(name="occupation", cols="30", rows="5")
+                                option(value="occupation") Occupation 
+                            
+                            input#email(type="text", name="other_occupation", placeholder="Other Occupation")
+                            
+                            input#author(type="text", name="annual_income", placeholder="Annual Income")
+                            
+                            input#email(type="text", name="package_payment", placeholder="Package Payment")
+                            
+                            input#email(type="text", name="emplyeedin", placeholder="Employee Din")
+                            
+                            textarea#url(name="occupation_in_detail", cols="30", rows="10", placeholder="Occupation in Details")
+                            |       
+                            input.previous.action-button(type="button", name="previous", value="Previous")
+                            |       
+                            input.next.action-button(type="button", name="next", value="Next")
+                        |   
+                        fieldset
+                            h2.fs-title Sport Details
+                            |       
+                            h3.fs-subtitle We will never sell it
+                            |       
+                            select#author(name="occupation", cols="30", rows="5")
+                                option(value="occupation") Occupation 
+                            
+                            input#email(type="text", name="other_occupation", placeholder="Other Occupation")
+                            
+                            input#author(type="text", name="annual_income", placeholder="Annual Income")
+                            
+                            input#email(type="text", name="package_payment", placeholder="Package Payment")
+                            
+                            input#email(type="text", name="emplyeedin", placeholder="Employee Din")
+                            
+                            textarea#url(name="occupation_in_detail", cols="30", rows="10", placeholder="Occupation in Details")
+                            |       
+                            input.previous.action-button(type="button", name="previous", value="Previous")
+                            |       
+                            input.next.action-button(type="button", name="next", value="Next")
+                        |   
+                        fieldset
+                            h2.fs-title Contact Details
+                            |       
+                            h3.fs-subtitle We will never sell it
+                            |       
+                            select#author(name="country_living", cols="30", rows="5")
+                                option(value="country_living") Country Living 
+                            
+                            input#email(type="text", name="other_country_living", placeholder="Other Country Living")
+                            
+                            select#author(name="state", cols="30", rows="5")
+                                option(value="state") State
+                            
+                            input#email(type="text", name="other_residing_living", placeholder="Other Residing State")
+                            
+                            select#author(name="district_id", cols="30", rows="5")
+                                option(value="district_id") District
+                            
+                            input#email(type="text", name="other_district", placeholder="Other Dstrict")
+                            
+                            select#author(name="citizenship", cols="30", rows="5")
+                                option(value="citizenship") Citizenship
+                            
+                            input#email(type="text", name="other_citizenship", placeholder="Other Citizenship")
+                            
+                            input#url(type="text", name="facebook", placeholder="Facebook Id")
+                            
+                            input#url(type="text", name="twitter", placeholder="Twitter Id")
+                            
+                            input#url(type="text", name="google_plus", placeholder="Google Plus Id")
+                            |       
+                            input.previous.action-button(type="button", name="previous", value="Previous")
+                            |       
+                            input.submit.action-button(type="submit", name="submit", value="Submit")
+                        // jQuery
+                        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+                        script(src="http://thecodeplayer.com/uploads/js/jquery-1.9.1.min.js", type="text/javascript")
+                        // jQuery easing plugin
+                        script(src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js", type="text/javascript")
+                        script.
+                            $("#profileImage").click(function(e) {
+                            $("#imageUpload").click();
+                               });
+                        script.
+                            //jQuery time
+                            var current_fs, next_fs, previous_fs; //fieldsets
+                            var left, opacity, scale; //fieldset properties which we will animate
+                            var animating; //flag to prevent quick multi-click glitches
+
+                            $(".next").click(function(){
+                                if(animating) return false;
+                                animating = true;
+                                
+                                current_fs = $(this).parent();
+                                next_fs = $(this).parent().next();
+                                
+                                //activate next step on progressbar using the index of next_fs
+                                $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+                                
+                                //show the next fieldset
+                                next_fs.show(); 
+                                //hide the current fieldset with style
+                                current_fs.animate({opacity: 0}, {
+                                    step: function(now, mx) {
+                                        //as the opacity of current_fs reduces to 0 - stored in "now"
+                                        //1. scale current_fs down to 80%
+                                        scale = 1 - (1 - now) * 0.2;
+                                        //2. bring next_fs from the right(50%)
+                                        left = (now * 50)+"%";
+                                        //3. increase opacity of next_fs to 1 as it moves in
+                                        opacity = 1 - now;
+                                        current_fs.css({'transform': 'scale('+scale+')'});
+                                        next_fs.css({'left': left, 'opacity': opacity});
+                                    }, 
+                                    duration: 800, 
+                                    complete: function(){
+                                        current_fs.hide();
+                                        animating = false;
+                                    }, 
+                                    //this comes from the custom easing plugin
+                                    easing: 'easeInOutBack'
+                                });
+                            });
+
+                            $(".previous").click(function(){
+                                if(animating) return false;
+                                animating = true;
+                                
+                                current_fs = $(this).parent();
+                                previous_fs = $(this).parent().prev();
+                                
+                                //de-activate current step on progressbar
+                                $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+                                
+                                //show the previous fieldset
+                                previous_fs.show(); 
+                                //hide the current fieldset with style
+                                current_fs.animate({opacity: 0}, {
+                                    step: function(now, mx) {
+                                        //as the opacity of current_fs reduces to 0 - stored in "now"
+                                        //1. scale previous_fs from 80% to 100%
+                                        scale = 0.8 + (1 - now) * 0.2;
+                                        //2. take current_fs to the right(50%) - from 0%
+                                        left = ((1-now) * 50)+"%";
+                                        //3. increase opacity of previous_fs to 1 as it moves in
+                                        opacity = 1 - now;
+                                        current_fs.css({'left': left});
+                                        previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+                                    }, 
+                                    duration: 800, 
+                                    complete: function(){
+                                        current_fs.hide();
+                                        animating = false;
+                                    }, 
+                                    //this comes from the custom easing plugin
+                                    easing: 'easeInOutBack'
+                                });
+                            });
+
+                            $(".submit").click(function(){
+                                return false;
+                            })
+                        

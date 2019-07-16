@@ -1,0 +1,53 @@
+extends ../layout/base 
+block content 
+	section.content-header 
+		h1 
+			| Blank Page
+			small it all starts here
+		ol.breadcrumb 
+			li 
+				a(href='#') 
+					i.fa.fa-dashboard
+					| Level 
+			li.active Here 
+	section.content
+		.box
+			.box-header.with-border
+				h3.box-title
+					| Sport
+				.box-tools.pull-right
+					button(type='button', data-widget='collapse', data-toggle='tooltip',title='collapse').btn.btn-box-tool
+						i.fa.fa-minus
+					
+			.box-body
+				form(role='form',method='post' action='/sports/add')
+					.row
+						
+						.col-xs-6
+							.box-body
+								- if (messages.msg_error) 
+									.alert.alert-danger.alert-dismissable 
+										button.close(type='button', data-dismiss='alert', aria-hidden='true') 
+											| ×
+										h4
+											i.icon.fa.fa-ban
+											| Alert! 
+										| !{messages.msg_error}
+								.form-group
+									label
+										| Sport Name
+									input(type='text',name='name',placeholder='Enter Sport Name', autofocus).form-control
+								.form-group
+									label
+										| Sport Category
+									input(type='text',name='sport_cat',placeholder='Enter Sport cat').form-control
+								.form-group
+									label
+										| Description
+									input(type='text',name='description',placeholder='Enter Description').form-control
+								
+							.box-footer
+								button(type='submit').btn.btn-primary
+									| Submit
+								a(href='/sports').btn.btn-primary.pull-right
+									| Back

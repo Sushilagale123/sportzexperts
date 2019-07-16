@@ -1,0 +1,37 @@
+/* 7.2 - ccr-latest-post-gallery    
+---------------------------------------------------------------------- */
+
+#ccr-latest-post-gallery {
+  overflow: hidden;
+  ;
+}
+
+#ccr-latest-post-gallery .ccr-latest-post {
+  margin-top: 5px;
+}
+
+#ccr-latest-post-gallery li {
+  width: 31.33%;
+  float: left;
+  padding: 10px 0;
+}
+
+#ccr-latest-post-gallery li:nth-child(3n+3),
+#ccr-latest-post-gallery li:nth-child(3n+2) {
+  margin-left: 3%;
+}
+
+#ccr-latest-post-gallery li h4 {
+  font-size: 1.2em;
+}
+
+#ccr-latest-post-gallery li h4 a,
+#ccr-world-news li h5 a {
+  display: inline-block;
+  line-height: 1.2em;
+  width: 100%;
+}
+
+#ccr-latest-post-gallery .ccr-thumbnail p {
+  padding-top: 35%;
+}

@@ -1,0 +1,40 @@
+/* 4.5 - ccr-sidebar-newslater
+---------------------------------------------------------------------- */
+.sidebar-newslater-form {
+	max-height: 50px;
+	margin-bottom: 40px;
+}
+.sidebar-newslater-form .ccr-gallery-ttile{
+	border-right: 0;
+}
+.sidebar-newslater-form form{
+	margin-top: 10px;
+}
+#ccr-sidebar-newslater input[type="email"]{
+	min-width: 50px;
+	margin:6px 2%;
+	outline-style: none;
+	border:none;
+	padding: 0 2%;
+	border: 1px solid #d7d7d7;
+	line-height:20px;
+	width: 71%;
+	height: 28px;
+	float: left;
+}
+#ccr-sidebar-newslater button{
+	color: #FFF;
+	font-weight: 700;
+	background-color: #2cb2bc;
+	outline-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 25.5%;
+	min-width: 35px;
+	margin-right: -2%;
+	float: left;
+}
+#ccr-sidebar-newslater button:hover{
+	background-color: #47cad4;
+}

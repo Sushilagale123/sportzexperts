@@ -1,0 +1,19 @@
+extends layout/base 
+block content 
+    .container
+        section#ccr-main-section
+            .container
+                section.col-md-12
+                    .current-page
+                        a(href='/')
+                            i.fa.fa-home
+                            i.fa.fa-angle-double-right
+                            |  Login
+                    // / .current-page
+                    section#ccr-login-form.col-md-6.col-md-offset-3
+                        form#commentform(action='/users/login', method='post')
+                            input#url(name='email', type='email', placeholder='Email', value='', required='')
+                            input#url(name='pasword', type='password', placeholder='Password', value='',required='')
+                            input#submit.pull-right(name='submit', type='submit', value='Login')
+                            a.pull-left(href="#")
+                                |  Create Account

@@ -1,0 +1,500 @@
+extends layout/base 
+block content 
+  section#ccr-slide-main.carousel.slide(data-ride='carousel')
+      // Carousel items
+      .carousel-inner
+        .active.item
+          .slide-element
+            img(src='front/img/slide/main-slide-1.jpg', alt='Main Slide Image 1')
+            p
+              a(href='#') Lorem ipsum dolor sit amet
+          // /.slide-element
+        // /.active /.item
+        .item
+          .slide-element
+            img(src='front/img/slide/main-slide-2.jpg', alt='Main Slide Image 1')
+            p
+              a(href='#') Lorem ipsum dolor sit amet
+          // /.slide-element
+        // /.item
+        .item
+          .slide-element
+            img(src='front/img/slide/main-slide-3.jpg', alt='Main Slide Image 1')
+            p
+              a(href='#') Lorem ipsum dolor sit amet
+          // /.slide-element
+        // .item
+        .item
+          .slide-element
+            img(src='front/img/slide/main-slide-4.jpg', alt='Main Slide Image 1')
+            p
+              a(href='#') Lorem ipsum dolor sit amet
+          // /.slide-element
+        // /.item
+      // /.carousel-inner
+      // slider nav
+      a.carousel-control.left(href='#ccr-slide-main', data-slide='prev')
+        i.fa.fa-arrow-left
+      a.carousel-control.right(href='#ccr-slide-main', data-slide='next')
+        i.fa.fa-arrow-right
+      ol.carousel-indicators
+        li.active(data-target='#ccr-slide-main', data-slide-to='0')
+        li(data-target='#ccr-slide-main', data-slide-to='1')
+        li(data-target='#ccr-slide-main', data-slide-to='2')
+        li(data-target='#ccr-slide-main', data-slide-to='3')
+      // /.carousel-indicators
+    // /#ccr-slide-main
+  .container  
+    section#ccr-left-section.col-md-8
+      section#ccr-latest-post-gallery
+        .ccr-gallery-ttile
+          span
+          p Others Latest Post Gallery
+        // .ccr-gallery-ttile
+        ul.ccr-latest-post
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail1.jpg', alt='Thumbnail 1')
+              p
+                a(href='#postlink') Read More
+            h4
+              a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail2.jpg', alt='Thumbnail 1')
+              p
+                a(href='#postlink') Read More
+            h4
+              a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail3.jpg', alt='Thumbnail 1')
+              p
+                a(href='#postlink') Read More
+            h4
+              a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail4.jpg', alt='Thumbnail 1')
+              p
+                a(href='#postlink') Read More
+            h4
+              a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail5.jpg', alt='Thumbnail 1')
+              p
+                a(href='#postlink') Read More
+            h4
+              a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail6.jpg', alt='Thumbnail 1')
+              p
+                a(href='#postlink') Read More
+            h4
+              a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        // /.ccr-latest-post
+      // /#ccr-latest-post-gallery
+      section.bottom-border
+      // /#bottom-border
+      section#ccr-world-news
+        .ccr-gallery-ttile
+          span
+          p World News
+        // .ccr-gallery-ttile
+        section.featured-world-news
+          .featured-world-news-img
+            img(src='front/img/thumbnail-big1.jpg', alt='Thumb')
+          .featured-world-news-post
+            h5 Featured World News Post Title
+            | 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quod, nostrum, corrupti, maxime quis doloribus debitis id consectetur laudantium iure aperiam soluta consequuntur modi accusamus molestias. Ab veniam atque eius...
+            .like-comment-readmore
+              i.fa.fa-thumbs-o-up  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+              a.read-more(href='#') Read More
+            // /.like-comment-readmore
+        // /#featured-world-news
+        ul
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail-small-1.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail-small-2.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail-small-3.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail-small-4.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail-small-5.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail-small-6.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail-small-7.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/thumbnail-small-8.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+      // / #ccr-world-news
+      section.bottom-border
+      section#ccr-sports-gallery
+        .ccr-gallery-ttile
+          span
+          p Sports Gallery
+        // .ccr-gallery-ttile
+        section.featured-sports-news
+          .featured-sports-newss-img
+            img(src='front/img/sports-thumb-1.jpg', alt='Thumb')
+          .featured-sports-news-post
+            h5 Featured Sports News Post Title
+            | 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quod, nostrum, corrupti, maxime quis doloribus debitis id consectetur laudantium iure aperiam soluta consequuntur modi accusamus molestias. Ab veniam atque eius...
+            .like-comment-readmore
+              i.fa.fa-thumbs-o-up  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+              a.read-more(href='#') Read More
+            // /.like-comment-readmore
+        // /#featured-sports-news
+        ul
+          li
+            .ccr-thumbnail
+              img(src='front/img/sports-thumb-2.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/sports-thumb-3.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/sports-thumb-4.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/sports-thumb-5.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/sports-thumb-6.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/sports-thumb-7.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/sports-thumb-8.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/sports-thumb-9.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/sports-thumb-10.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+          li
+            .ccr-thumbnail
+              img(src='front/img/sports-thumb-11.jpg', alt='thumbnail-small-1.jpg')
+              p
+                a(href='#postlink') Read More
+            h5
+              a(href='#') Lorem ipsum is simply dummy text...
+      // /#ccr-sports-gallery
+      section.bottom-border
+    // /.col-md-8 / #ccr-left-section
+    aside#ccr-right-section.col-md-4.ccr-home
+      section#social-buttons
+        ul
+          li
+            a.google-plus(href='#')
+              i.fa.fa-google-plus
+            p
+              span.bubble
+              span.count 202
+              |  Like
+          li
+            a.linkedin(href='#')
+              i.fa.fa-linkedin
+            p
+              span.bubble
+              span.count 202
+              |  Like
+          li
+            a.twitter(href='#')
+              i.fa.fa-twitter
+            p
+              span.bubble
+              span.count 202
+              |  Follow
+          li
+            a.facebook(href='#')
+              i.fa.fa-facebook
+            p
+              span.bubble
+              span.count 202
+              |  Like
+      // /#social-buttons
+      section#sidebar-popular-post
+        .ccr-gallery-ttile
+          span
+          p
+            strong Popular Post
+        // .ccr-gallery-ttile
+        ul
+          li
+            img(src='front/img/sports-thumb-10.jpg', alt='Avatar')
+            a(href='#') This is the first popular post
+            .date-like-comment
+              span.date
+                time(datetime='2014-02-17') 2014-02-17
+              a.like(href='#')
+                i.fa.fa-thumbs-o-up
+                |  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+          li
+            img(src='front/img/thumbnail-small-7.jpg', alt='Avatar')
+            a(href='#') This is the first popular post
+            .date-like-comment
+              span.date
+                time(datetime='2014-02-17') 2014-02-17
+              a.like(href='#')
+                i.fa.fa-thumbs-o-up
+                |  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+          li
+            img(src='front/img/sports-thumb-5.jpg', alt='Avatar')
+            a(href='#') This is the first popular post
+            .date-like-comment
+              span.date
+                time(datetime='2014-02-17') 2014-02-17
+              a.like(href='#')
+                i.fa.fa-thumbs-o-up
+                |  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+          li
+            img(src='front/img/thumbnail-small-2.jpg', alt='Avatar')
+            a(href='#') This is the first popular post
+            .date-like-comment
+              span.date
+                time(datetime='2014-02-17') 2014-02-17
+              a.like(href='#')
+                i.fa.fa-thumbs-o-up
+                |  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+          li
+            img(src='front/img/thumbnail-small-5.jpg', alt='Avatar')
+            a(href='#') This is the first popular post
+            .date-like-comment
+              span.date
+                time(datetime='2014-02-17') 2014-02-17
+              a.like(href='#')
+                i.fa.fa-thumbs-o-up
+                |  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+      // /#sidebar-popular-post
+      section#sidebar-video-post
+        .ccr-gallery-ttile
+          span
+          p
+            strong Video Post
+        // .ccr-gallery-ttile
+        .sidebar-video
+          iframe(width='340', height='195', src='//www.youtube.com/embed/Ak8f8yTPRRc', frameborder='0', allowfullscreen='')
+          | 				CodexCoder creates spectacular Premium WordPress Themes, WordPress Plugins, HTML Templates, PSD Template and more...
+        .date-like-comment
+          a.like(href='#')
+            i.fa.fa-thumbs-o-up
+            |  08
+          a.comments(href='#')
+            i.fa.fa-comments-o
+            |  49
+      // /#sidebar-video-post      
+      section#sidebar-older-post
+        .ccr-gallery-ttile
+          span
+          p
+            strong Older Post
+        // .ccr-gallery-ttile
+        ul
+          li
+            img(src='front/img/sports-thumb-10.jpg', alt='Avatar')
+            a(href='#') This is the first popular post
+            .date-like-comment
+              span.date
+                time(datetime='2014-02-17') 2014-02-17
+              a.like(href='#')
+                i.fa.fa-thumbs-o-up
+                |  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+          li
+            img(src='front/img/thumbnail-small-7.jpg', alt='Avatar')
+            a(href='#') This is the first popular post
+            .date-like-comment
+              span.date
+                time(datetime='2014-02-17') 2014-02-17
+              a.like(href='#')
+                i.fa.fa-thumbs-o-up
+                |  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+          li
+            img(src='front/img/sports-thumb-5.jpg', alt='Avatar')
+            a(href='#') This is the first popular post
+            .date-like-comment
+              span.date
+                time(datetime='2014-02-17') 2014-02-17
+              a.like(href='#')
+                i.fa.fa-thumbs-o-up
+                |  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+          li
+            img(src='front/img/thumbnail-small-2.jpg', alt='Avatar')
+            a(href='#') This is the first popular post
+            .date-like-comment
+              span.date
+                time(datetime='2014-02-17') 2014-02-17
+              a.like(href='#')
+                i.fa.fa-thumbs-o-up
+                |  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+          li
+            img(src='front/img/thumbnail-small-5.jpg', alt='Avatar')
+            a(href='#') This is the first popular post
+            .date-like-comment
+              span.date
+                time(datetime='2014-02-17') 2014-02-17
+              a.like(href='#')
+                i.fa.fa-thumbs-o-up
+                |  08
+              a.comments(href='#')
+                i.fa.fa-comments-o
+                |  49
+      // /#sidebar-older-post
+      section#sidebar-entertainment-post
+        .ccr-gallery-ttile
+          span
+          p
+            strong Entertainment
+        // .ccr-gallery-ttile
+        .sidebar-entertainment
+          img(src='front/img/entertainment.jpg', alt='entertainment')
+          a(href='#') Miss Joly loves you to share her tell. Are you ready?
+        .date-like-comment
+          a.like(href='#')
+            i.fa.fa-thumbs-o-up
+            |  08
+          a.comments(href='#')
+            i.fa.fa-comments-o
+            |  49
+      // /#sidebar-entertainment-post
+      // section#ccr-sidebar-add-place
+        // .sidebar-add-place
+          // | 370x250 px
+      // /#ccr-sidebar-add-place
+      section#ccr-sidebar-newslater
+        .ccr-gallery-ttile
+          span
+          p
+            label(for='sb-newslater')
+              strong Newslater
+        // .ccr-gallery-ttile
+        .sidebar-newslater-form
+          form.ccr-gallery-ttile(action='#')
+            input#sb-newslater(type='email', name='sb-newslater', placeholder='Enter your email address', required='')
+            button(type='submit') Subscribe
+        // /.sidebar-newslater-form
+      section#ccr-find-on-fb
+      .find-fb-title
+        span
+          i.fa.fa-facebook
+        |  Find us on Facebook
+      // /.find-fb-title
+      .find-on-fb-body
+        .fb-like-box(data-href='https://www.facebook.com/codexcoderltd/', data-colorscheme='light', data-show-faces='true', data-header='false', data-stream='false', data-show-border='false')
+      // /.find-on-fb-body
+    // /#ccr-find-on-fb
+    // / .col-md-4  / #ccr-right-section

@@ -1,0 +1,93 @@
+#social-buttons {
+	overflow: hidden;
+	border:1px solid #e3e2e2;
+	padding: 15px 15px 0;
+	margin-bottom: 40px;
+}
+#social-buttons li{
+	float: left;
+	width: 65px;
+	margin-right: 20px;
+}
+#social-buttons li:last-child{
+	margin-right:0;
+}
+#social-buttons li p{
+	line-height: 22px;
+	text-align: center;
+	background-color: #f2f2f4;	
+	border:1px solid #e3e2e2;
+	margin: 15px 0;
+	float: left;
+	width: 70px;
+	height: 50px;
+}
+#social-buttons p .bubble{
+	background-image: url(/assets/img/bubble.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin-top: -10px;
+	width: 70px;
+	height: 10px;
+	float: left;
+	z-index: 99999;
+}
+#social-buttons p  .count{
+	font-size: 1.2em;
+	padding: 0 15px;
+}
+#social-buttons a{
+	text-align:center;
+	line-height: 40px;
+	font-size: 1.3em;
+	margin: 0 15px;
+	background-color: #f2f2f4;
+	float:left;
+	width:40px;
+	height:40px;
+}
+#social-buttons a:hover{
+	color: #FFF;
+}
+#social-buttons a,
+#ccr-contact-sidebar li a {
+  -webkit-transition: all .25s ease-in;
+  -moz-transition: all .25s ease-in;
+  -ms-transition: all .25s ease-in;
+  -o-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+#ccr-contact-sidebar li .google-plus:hover,
+#social-buttons .google-plus:hover,
+.google-plus:hover {
+  color: #FFF;
+  background-color: #db514f;
+}
+
+#ccr-contact-sidebar li .linkedin:hover,
+#social-buttons .linkedin:hover,
+.linkedin:hover {
+  color: #FFF;
+  background-color: #0077b5;
+}
+
+#ccr-contact-sidebar li .twitter:hover,
+#social-buttons .twitter:hover,
+.twitter:hover {
+  color: #FFF;
+  background-color: #2e9edd;
+}
+
+#ccr-contact-sidebar li .facebook:hover,
+#social-buttons .facebook:hover,
+.facebook:hover {
+  color: #FFF;
+  background-color: #3b5998;
+}
+
+.google-plus,
+.linkedin,
+.twitter,
+.facebook {
+  display: inline-block;
+}

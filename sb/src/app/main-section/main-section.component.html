@@ -1,0 +1,80 @@
+<app-header1></app-header1>
+<section id="ccr-main-section">
+  <section id="ccr-slide-main" class="carousel slide" data-ride="carousel">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="active item">
+        <div class=" slide-element">
+          <img src="assets/img/slide/main-slide-1.jpg" alt="Main Slide Image 1">
+          <p><a href="#">Lorem ipsum dolor sit amet</a></p>
+        </div>
+        <!-- /.slide-element -->
+      </div>
+      <!--/.active /.item -->
+      <div class="item">
+        <div class=" slide-element">
+          <img src="assets/img/slide/main-slide-2.jpg" alt="Main Slide Image 1">
+          <p><a href="#">Lorem ipsum dolor sit amet</a></p>
+        </div>
+        <!-- /.slide-element -->
+      </div>
+      <!--  /.item -->
+      <div class="item">
+        <div class=" slide-element">
+          <img src="assets/img/slide/main-slide-3.jpg" alt="Main Slide Image 1">
+          <p><a href="#">Lorem ipsum dolor sit amet</a></p>
+        </div>
+        <!-- /.slide-element -->
+      </div>
+      <!-- .item -->
+      <div class="item">
+        <div class=" slide-element">
+          <img src="assets/img/slide/main-slide-4.jpg" alt="Main Slide Image 1">
+          <p><a href="#">Lorem ipsum dolor sit amet</a></p>
+        </div>
+        <!-- /.slide-element -->
+      </div>
+      <!-- /.item -->
+    </div>
+    <!-- /.carousel-inner -->
+    <!-- slider nav -->
+    <a class="carousel-control left" href="#ccr-slide-main" data-slide="prev"><i class="fa fa-arrow-left"></i></a>
+    <a class="carousel-control right" href="#ccr-slide-main" data-slide="next"><i class="fa fa-arrow-right"></i></a>
+    <ol class="carousel-indicators">
+      <li data-target="#ccr-slide-main" data-slide-to="0" class="active"></li>
+      <li data-target="#ccr-slide-main" data-slide-to="1"></li>
+      <li data-target="#ccr-slide-main" data-slide-to="2"></li>
+      <li data-target="#ccr-slide-main" data-slide-to="3"></li>
+    </ol>
+    <!-- /.carousel-indicators -->
+  </section>
+  <div class="container">
+    <!-- /#ccr-slide-main -->
+    <section id="ccr-left-section" class="col-md-8">
+      <app-latest-post></app-latest-post>
+      <section class="bottom-border"></section>
+      <!-- /#bottom-border -->
+      <app-world-news></app-world-news>
+      <section class="bottom-border"></section>
+      <app-sports-gallery></app-sports-gallery>
+      <section class="bottom-border"></section>
+    </section>
+    <!-- /.col-md-8 / #ccr-left-section -->
+    <aside id="ccr-right-section" class="col-md-4 ccr-home">
+      <app-popular-post></app-popular-post>
+      <app-video-post></app-video-post>
+      <app-calendar></app-calendar>
+      <app-older-post></app-older-post>
+      <app-entertainment-post></app-entertainment-post>
+      <app-newslater></app-newslater>
+      <app-find-on-fb></app-find-on-fb>
+      <app-social-buttons></app-social-buttons>
+    </aside>
+  </div>
+  <!-- / .col-md-4  / #ccr-right-section -->
+  <!-- /.container -->
+</section>
+<!--<div class="clearfix"></div>-->
+<!-- / #ccr-main-section -->
+<app-footer-sidebar></app-footer-sidebar>
+<app-footer></app-footer>

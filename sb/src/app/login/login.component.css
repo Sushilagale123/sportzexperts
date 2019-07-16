@@ -1,0 +1,44 @@
+.container{
+	padding: 20px;
+
+}
+.col-md-8
+	{
+		padding-left:250px;
+	}
+.col-md-4
+	{
+		/*float: right;*/
+		background-color: #2cb2bc;
+	}
+
+.login-image{
+		width: 250px;
+		height: 250px;
+}
+/*For authentication*/
+
+
+.photo {
+  object-fit: contain;
+}
+
+.card {
+  width: 20rem;
+  margin: 0 auto;
+}
+.btn
+{
+	position: centre;
+	float: inherit;
+}
+.btn:hover
+{
+	color: blue;
+}
+.btn-group:
+{
+	padding: 10px;
+}
+
+/*Authentication ends*/

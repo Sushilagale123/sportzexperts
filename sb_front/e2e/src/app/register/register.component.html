@@ -1,0 +1,55 @@
+<app-header1></app-header1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+     <img class="register-img" [src]="registerimage" alt="Loading image">
+    </div>
+    <div class="col-md-4">
+      <div class="form">
+        <h1>Registration Form</h1>
+        <form #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm.value)">
+          <div class='form-group'>
+            <label for="name">Name</label>
+            <input type="text" id="name" required placeholder="Johnny Bravo" class="form-control" name="name" ngControl="name" pattern="[a-zA-Z ]+$" ngModel required minlength="4" #name="ngModel">
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+              <div *ngIf="name.errors.minlength">Name must be atleast 4 characters long</div>
+              <div *ngIf="name.errors.required">Name is required</div>
+              <div *ngIf="name.errors?.pattern">Name cannot contain numbers</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="23" class="form-control" name="age" ngControl="age" ngModel required min="10" max="100" #age="ngModel">
+            <div *ngIf="age.invalid && (age.dirty || age.touched)" class="alert alert-danger">
+              <div *ngIf="age.errors.required">Age is required</div>
+              <div *ngIf="age.errors?.max">Age cannot be greater than 100</div>
+              <div *ngIf="age.errors?.min">Age cannot be less than 10</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="text" class="form-control" name="email" placeholder="johnny@gmail.com" ngControl="email" ngModel required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" #email="ngModel">
+            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+              <div *ngIf="email.errors.required">Email is required</div>
+              <div *ngIf="email.errors.pattern">Email is invalid</div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label for="name">Password</label>
+            <input type="password" id="pwd" placeholder="*************" class="form-control" name="password" ngControl="Password" minlength="8" ngModel required #password="ngModel" pattern="[a-zA-Z0-9]{1,}[@#$%^&*]{1,}[a-zA-Z0-9]{1,}">
+            <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">
+              <div *ngIf="password.errors?.pattern">Password must contain a combination of alphabets,numbers,symbols</div>
+              <div *ngIf="password.errors?.minlength">Password minimum length is 8</div>
+              <div *ngIf="password.errors?.required">Password is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="form-control btn btn-primary btn-send" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+<!-- Password consists of one or more alphabets or numbers followed by one or more special characters followed by one or more alphabets or numbers-->

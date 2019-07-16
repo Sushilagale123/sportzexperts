@@ -1,0 +1,52 @@
+/* 7.3 - ccr-world-news    
+---------------------------------------------------------------------- */
+
+#ccr-world-news {
+  overflow: hidden;
+}
+
+#ccr-world-news .featured-world-news {
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0px;
+}
+
+#ccr-world-news .featured-world-news img {
+  width: 100%;
+}
+
+#ccr-world-news .featured-world-news-img {
+  width: 48.5%;
+  float: left;
+  height: 252px;
+}
+
+#ccr-world-news .featured-world-news-post {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  height: 252px;
+  width: 48.5%;
+  float: right;
+}
+
+#ccr-world-news .featured-world-news-post h5 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#ccr-world-news h5 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+#ccr-world-news li {
+  width: 22.75%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+#ccr-world-news li:nth-child(4n+1),
+#ccr-world-news li:nth-child(4n+2),
+#ccr-world-news li:nth-child(4n+3) {
+  margin-right: 3%;
+}

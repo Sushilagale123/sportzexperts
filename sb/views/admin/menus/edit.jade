@@ -1,0 +1,82 @@
+extends ../layout/base 
+block content 
+	section.content-header 
+		h1 
+			| Edit Menu
+			small menu for editing menu data
+		ol.breadcrumb 
+			li 
+				a(href='#') 
+					i.fa.fa-dashboard
+					| Level 
+			li.active Here 
+	section.content
+		.box
+			.box-header.with-border
+				h3.box-title
+					| Menu
+				.box-tools.pull-right
+					button(type='button', data-widget='collapse', data-toggle='tooltip',title='collapse').btn.btn-box-tool
+						i.fa.fa-minus
+					
+			.box-body
+				form(role='form',method='post' action='/menus/edit/#{(id==undefined) ? data.id : id}')
+					.row		
+						.col-xs-6
+							.box-body
+								- if (messages.msg_error) 
+									.alert.alert-danger.alert-dismissable 
+										button.close(type='button', data-dismiss='alert', aria-hidden='true') 
+											| ×
+										h4
+											i.icon.fa.fa-ban
+											| Alert! 
+										| !{messages.msg_error}
+								- if (messages.msg_info) 
+									.alert.alert-success.alert-dismissable 
+										button.close(type='button', data-dismiss='alert', aria-hidden='true') 
+											| ×
+										h4
+											i.icon.fa.fa-ban
+											| Success! 
+										| !{messages.msg_info}
+								.form-group
+									label
+										| Menu
+									input(type='text',value="#{data.menu}",name='menu',placeholder='Enter Menu Name', autofocus).form-control
+								.form-group
+									label
+										| Controller
+									input(type='text',value="#{ (controller == undefined) ? data.controller : controller }",name='controller',placeholder='Enter Controller').form-control
+								.form-group
+									label
+										| Action
+									input(type='text',value="#{ (action == undefined) ? data.action : action }",name='action',placeholder='Enter Action').form-control
+								.form-group
+									label
+										| Params
+									input(type='text',value="#{ (params == undefined) ? data.params : params }",name='params',placeholder='Enter Params').form-control
+								.form-group
+									label
+										| Parent Menu
+									input(type='text',value="#{ (parent_menu_id == undefined) ? data.parent_menu_id : parent_menu_id }",name='parent_menu_id',placeholder='Enter Parent Menu').form-control
+								.form-group
+									label
+										| Position 
+									input(type='text',value="#{ (position_id == undefined) ? data.position_id : position_id }",name='position_id',placeholder='Enter Position').form-control
+								.form-group
+									label
+										| Layout
+									input(type='text',value="#{ (layout_id == undefined) ? data.layout_id : layout_id }",name='layout_id',placeholder='Enter Layout').form-control
+								.form-group
+									label
+										| Status
+									input(type='text',value="#{ (status == undefined) ? data.status : status }",name='status',placeholder='Enter Iso Numeric').form-control
+										
+							.box-footer
+								input(type="hidden",name="_method", value="PUT")
+								button(type='submit').btn.btn-primary
+									i.fa.fa-pencil 
+									|  Edit
+								a(href='/menus').btn.btn-primary.pull-right
+									| Back

@@ -1,0 +1,192 @@
+/* 3.0 - ccr-main-section
+---------------------------------------------------------------------- */
+#ccr-left-section.col-md-8,
+#ccr-right-section.col-md-4{
+	min-height: 400px;
+	padding: 0px;
+	padding-bottom: 40px;
+}
+
+/* 3.1 - ccr-left-section    
+---------------------------------------------------------------------- */
+#ccr-left-section.col-md-8{
+	border-right: 1px solid #e3e2e2;
+	padding-right: 15px;
+}
+
+#ccr-left-section .ccr-last-update{
+	background-color: #f2f2f4;
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	margin-top: 15px;
+}
+#ccr-left-section .update-ribon{
+	color:#FFF;
+	font-size: 1.142857142857143em;
+	line-height: 40px;
+	background-color: #2cb2bc;
+	width: 115px;
+	height: 100%;
+	padding:0 5px 0 10px;
+	float: left;
+}
+#ccr-left-section .update-ribon-right{
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent; 
+	border-left:15px solid #2cb2bc;
+	float: left;
+}
+#ccr-left-section .update-news-text{ 
+	float: left;
+	padding-left: 10px;
+}
+#ccr-left-section .update-news-text ul{
+	line-height: 40px;
+}
+#ccr-left-section .update-right-border{
+	width: 0;
+	height: 40px;
+	border-right:5px solid #2cb2bc;
+	float: right;
+}
+
+#latestUpdate > li > a{
+	font-size: 1.2em;
+}
+/* 3.2 - ccr-right-section
+---------------------------------------------------------------------- */
+#ccr-main-section #ccr-right-section.col-md-4{
+	padding-left: 15px;
+	margin-top: 40px;
+}
+#ccr-main-section #ccr-right-section.col-md-4.ccr-home{
+	margin-top: 15px;
+}
+#social-buttons {
+	overflow: hidden;
+	border:1px solid #e3e2e2;
+	padding: 15px 15px 0;
+	margin-bottom: 40px;
+}
+#social-buttons li{
+	float: left;
+	width: 65px;
+	margin-right: 20px;
+}
+#social-buttons li:last-child{
+	margin-right:0;
+}
+#social-buttons li p{
+	line-height: 22px;
+	text-align: center;
+	background-color: #f2f2f4;	
+	border:1px solid #e3e2e2;
+	margin: 15px 0;
+	float: left;
+	width: 70px;
+	height: 50px;
+}
+#social-buttons p .bubble{
+	background-image: url(/src/assets/img/bubble.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin-top: -10px;
+	width: 70px;
+	height: 10px;
+	float: left;
+	z-index: 99999;
+}
+#social-buttons p  .count{
+	font-size: 1.2em;
+	padding: 0 15px;
+}
+#social-buttons a{
+	text-align:center;
+	line-height: 40px;
+	font-size: 1.3em;
+	margin: 0 15px;
+	background-color: #f2f2f4;
+	float:left;
+	width:40px;
+	height:40px;
+}
+#social-buttons a:hover{
+	color: #FFF;
+}
+/* 3.0 ccr-main-section End
+---------------------------------------------------------------------- */
+
+/* 4.0 Right Sidebar
+---------------------------------------------------------------------- */
+
+/* 4.4 - ccr-sidebar-add-place
+---------------------------------------------------------------------- */
+.sidebar-add-place
+{
+	font-size: 3em;
+	text-align: center;
+	color: #FFF;
+	background-color: #d5d5d5;
+	max-width: 370px;
+	max-height: 250px;
+	line-height: 250px;
+	margin-bottom: 40px;
+}
+/*= 4.0 - Right Sidebar End
+---------------------------------------------------------------------- */
+#ccr-slide-main {
+  position: relative;
+  margin: 10px 0px 50px 0px;
+}
+
+#ccr-slide-main p {
+  position: inherit;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .4);
+  width: 100%;
+  min-height: 60px;
+  line-height: 60px;
+  margin-bottom: 0px;
+}
+
+#ccr-slide-main p a {
+  color: #fff;
+  font-size: 1.71428571em;
+  padding-left: 30px;
+}
+
+#ccr-slide-main .carousel-indicators {
+  bottom: -40px;
+}
+
+#ccr-slide-main .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 0px;
+}
+
+#ccr-slide-main .carousel-indicators .active {
+  background-color: #2cb2bc;
+}
+
+#ccr-slide-main .carousel-control {
+
+  text-shadow: none;
+  display: inline-block;
+  background: #2cb2bc;
+  line-height: 36px!important;
+  -moz-line-height: 36px!important;
+  height: 40px;
+  width: 40px;
+  top: 45%;
+  opacity: inherit;
+}
+
+#ccr-slide-main .carousel-control:hover {
+  background-color: #5f5f5f;
+}

@@ -1,0 +1,116 @@
+
+<header id="ccr-header">
+  <section id="ccr-nav-top" class="fullwidth">
+    <div class="">
+      <div class="container">
+        <nav class="top-menu">
+          <ul class="left-top-menu">
+            <li><a routerLink='/Home'>Home</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a routerLink='/Contact Us'>Contact</a></li>
+          </ul>
+          <!-- /.left-top-menu -->
+          <ul class="right-top-menu pull-right">
+            <li *ngFor="let menu of menus"><a routerLink="/{{menu}}">{{menu}}</a></li>
+            {{menu|translate}}
+            <li>
+              <form class="form-inline" role="form" action="#">
+                <input type="search" placeholder="Search here..." required>
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+          </ul>
+          <!--  /.right-top-menu -->
+        </nav>
+        <!-- /.top-menu -->
+      </div>
+    </div>
+  </section>
+  <!--  /#ccr-nav-top  -->
+  <section id="ccr-site-title">
+    <div class="container">
+      <div class="site-logo">
+        <a href="index.html" class="navbar-brand">
+          <img src="assets/img/logo.png" alt="Side Logo" />
+            <h1>Daily <span>News</span></h1>
+            <h3 translate>The daily news source</h3>
+        </a>
+      </div>
+      <!-- / .navbar-header -->
+      <div class="add-space">
+        728 x 90 px Banner
+      </div>
+      <!-- / .adspace -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- / #ccr-site-title -->
+  <section id="ccr-nav-main">
+    <nav class="main-menu">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ccr-nav-main">
+            <i class="fa fa-bars"></i>
+          </button>
+          <!-- /.navbar-toggle -->
+        </div>
+        <!-- / .navbar-header -->
+        <div class="collapse navbar-collapse ccr-nav-main">
+          <ul class="nav navbar-nav">
+            <li class="active" *ngFor="let menu1 of menus1"><a routerLink="/{{menu1}}">{{menu1}}</a></li>
+            <!--<li><a class="active" href="index.html">Home</a></li>
+            <li><a href="match.html">Matches</a></li>
+            <li><a href="tournament.html">Tournaments</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>-->
+          </ul>
+          <!-- /  .nav -->
+        </div>
+        <!-- /  .collapse .navbar-collapse  -->
+        <div id="currentTime" class="pull-right current-time">
+          <i class="fa fa-clock-o"> <app-clock></app-clock></i>
+        </div>
+        <!-- / #currentTime -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- /.main-menu -->
+  </section>
+  <!-- / #ccr-nav-main -->
+  <section id="ccr-nav-below-main">
+    <nav class="second-menu">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ccr-nav-below-main">
+            <i class="fa fa-bars"></i>
+          </button>
+          <!-- /.navbar-toggle -->
+        </div>
+        <!-- / .navbar-header -->
+        <div class="collapse navbar-collapse ccr-nav-below-main">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Cricket</a></li>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Hockey</a></li>
+            <li><a href="#">Badminton</a></li>
+            <li><a href="#">NBA</a></li>
+          </ul>
+          <!-- /.nav /.navbar-nav -->
+        </div>
+        <div class="ccr-language">
+          <ul>
+            <li translate>Language:</li>
+            <li><a (click)="switchLanguage('en')"><img src="assets/img/uk.png" alt="UK">English</a></li>
+            <li><a (click)="switchLanguage('fr')"><img src="assets/img/france.png" alt="France">France</a></li>
+            <li><a (click)="switchLanguage('de')"><img src="assets/img/garman.png" alt="Garman">German</a></li>
+          </ul>
+        </div>
+        <!-- /.ccr-language -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- /.second-menu -->
+  </section>
+  <!-- / #ccr-nav-below-main -->
+</header>
+<!-- /#ccr-header -->

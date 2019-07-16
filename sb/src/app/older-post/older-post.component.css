@@ -1,0 +1,27 @@
+/* 4.1 - sidebar-popular-post and sidebar-older-post
+---------------------------------------------------------------------- */
+#sidebar-older-post{
+	overflow: hidden;
+}
+
+#sidebar-older-post li{
+	padding: 8px;
+	width: 100%;
+	float:left;
+	border-left: 1px solid  #e3e2e2;
+	border-right: 1px solid  #e3e2e2;
+}
+ #sidebar-older-post li img{
+	width: 65px;
+	height: 65px;
+	float: left;
+	margin-right: 8px;
+} 
+#sidebar-older-post li:last-child {
+	border-bottom: 1px solid  #e3e2e2;
+	margin-bottom: 40px;
+
+} 
+#sidebar-older-post li:nth-child(even){
+	background-color: #f2f2f4;
+}

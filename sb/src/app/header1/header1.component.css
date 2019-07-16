@@ -1,0 +1,307 @@
+/* 2.0 - Header
+---------------------------------------------------------------------- */
+
+#ccr-header .fullwidth {
+  background-color: #343333;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+#ccr-nav-top {
+  height: 41px;
+}
+
+.navbar-brand>h3{
+  margin-top: 10px;
+  margin-left: 30%;
+}
+
+/* 2.1 - ccr-nav-top 
+---------------------------------------------------------------------- */
+
+#ccr-nav-top ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#ccr-nav-top ul li {
+  list-style: none;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+#ccr-nav-top ul li a {
+  color: #a5a3a5;
+  display: inline-block;
+  padding: 0px 10px;
+  height: 40px;
+  line-height: 40px;
+}
+
+#ccr-nav-top ul li a:hover {
+  color: #2cb2bc;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+#ccr-nav-top ul li:hover {
+  border-bottom: 2px solid #2cb2bc;
+}
+
+#ccr-nav-top ul:last-child li:last-child {
+  margin-top: 5px;
+}
+
+#ccr-nav-top ul:last-child li:last-child:hover {
+  border-bottom: none;
+}
+
+#ccr-nav-top ul input {
+  color: #5f5f5f;
+  background-color: #dadada;
+  outline-style: none;
+  border: none;
+  border-left: 5px solid #2cb2bc;
+  padding: 0 10px;
+  margin-right: 0px;
+  width: 225px;
+  height: 30px;
+}
+
+#ccr-nav-top ul button {
+  color: #fff;
+  margin: 0px;
+  margin-left: -5px;
+  background-color: #2cb2bc;
+  outline-style: none;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+#ccr-nav-top ul button:hover {
+  background-color: #47cad4;
+}
+
+#ccr-nav-main .nav li a i {
+  font-size: .75em;
+  padding-left: 10px;
+  line-height: 40px;
+}
+
+#ccr-nav-main .nav li ul a i {
+  float: right;
+}
+
+
+
+/* 2.2 - ccr-site-title 
+---------------------------------------------------------------------- */
+
+#ccr-site-title .container {
+  padding: 20px 0;
+}
+
+#ccr-site-title .site-logo a {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 300px;
+}
+
+#ccr-site-title .site-logo h1 {
+  color: #818285;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+#ccr-site-title .site-logo h1 span {
+  color: #515252;
+  font-weight: 700;
+}
+
+#ccr-site-title .site-logo h3 {
+  color: #333333;
+  font-size: .925em;
+  font-weight: 400;
+}
+
+#ccr-site-title .site-logo img {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 20px;
+  float: left;
+}
+
+#ccr-site-title .add-space {
+  text-align: center;
+  font-size: 3em;
+  color: #FFF;
+  background: #d5d5d5;
+  line-height: 80px;
+  width: 728px;
+  height: 90px;
+  float: right;
+}
+
+
+/* 2.3 - ccr-nav-main 
+---------------------------------------------------------------------- */
+
+#ccr-nav-main {
+  background-color: #2cb2bc;
+  width: 100%;
+  height: 40px;
+}
+
+#ccr-nav-main .navbar-collapse {
+  padding-left: 0px;
+  float: left;
+}
+
+#ccr-nav-main .nav li {
+  border-left: 1px solid rgba(255, 255, 255, .3);
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+#ccr-nav-main .nav li a {
+
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.125em;
+  background-color: #2cb2bc;
+  padding: 0px 20px;
+  line-height: 40px;
+  height: 40px;
+  -webkit-transition: all .15s ease-in;
+  -moz-transition: all .15s ease-in;
+  -ms-transition: all .15s ease-in;
+  -o-transition: all .15s ease-in;
+  transition: all .15s ease-in;
+}
+
+#ccr-nav-main .nav li:first-child {
+  border-left: none;
+}
+
+#ccr-nav-main .nav li:last-child {
+  border-right: none;
+}
+
+#ccr-nav-main .nav li a:hover {
+  background-color: #47cad4;
+}
+
+#ccr-nav-main .current-time {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.125em;
+  padding: 0px 20px;
+  line-height: 40px;
+  padding-right: 0px;
+  height: 40px;
+}
+
+
+.nav ul.sub-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+#ccr-nav-main .nav ul.sub-menu li {
+  position: relative;
+  border-left: none;
+  border-right: none;
+}
+
+.nav ul.sub-menu li a {
+  display: inline-block;
+  width: 180px;
+  min-height: 40px;
+  border-top: 1px solid rgba(255, 255, 255, .3);
+}
+
+.nav ul.sub-menu ul.sub-menu-2,
+.nav ul.sub-menu ul.sub-menu-2 ul.sub-menu-3 {
+  position: absolute;
+  display: none;
+  margin-left: 180px;
+  top: 0;
+  border-left: 1px solid #47cad4;
+  z-index: 200;
+}
+
+.nav ul.sub-menu ul.sub-menu-2 ul.sub-menu-3 {
+  z-index: 300;
+}
+
+.dropdown-menu {
+  background-color: #2cb2bc;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus {
+  background-image: none;
+  background-color: #47cad4;
+}
+
+
+/* 2.4 - ccr-nav-below-main
+---------------------------------------------------------------------- */
+
+#ccr-nav-below-main {
+  background-color: #f2f2f4;
+  width: 100%;
+}
+
+#ccr-nav-below-main .navbar-collapse {
+  padding-left: 0px;
+  float: left;
+}
+
+#ccr-nav-below-main .nav li a {
+  height: 40px;
+  color: #5f5f5f;
+  font-weight: 400;
+  font-size: 1.07142857em;
+  padding: 0px 20px;
+  line-height: 40px;
+}
+
+#ccr-nav-below-main .nav li a:hover {
+  color: #2cb2bc;
+}
+
+#ccr-nav-below-main .ccr-language {
+  float: right;
+}
+
+#ccr-nav-below-main .ccr-language li {
+  float: left;
+  line-height: 40px;
+  padding: 0 10px;
+}
+
+#ccr-nav-below-main .ccr-language li:last-child {
+  padding-right: 0px;
+}
+
+#ccr-nav-below-main .ccr-language img {
+  height: 14px;
+  width: 24px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+/* 2.0 Header  End
+---------------------------------------------------------------------- */

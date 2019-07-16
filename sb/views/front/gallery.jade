@@ -1,0 +1,82 @@
+extends layout/base 
+block content
+  .container
+    section#ccr-main-section
+      .container
+        section#ccr-latest-post-gallery
+          .current-page
+            a(href='/')
+              i.fa.fa-home
+              i.fa.fa-angle-double-right
+            |  Gallery
+          // / .current-page
+          ul.ccr-latest-post
+            li
+              .ccr-thumbnail
+                img(src='front/img/thumbnail1.jpg', alt='Thumbnail 1')
+                p
+                  a(href='#postlink') Read More
+              h4
+                a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            li
+              .ccr-thumbnail
+                img(src='front/img/thumbnail2.jpg', alt='Thumbnail 1')
+                p
+                  a(href='#postlink') Read More
+              h4
+                a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            li
+              .ccr-thumbnail
+                img(src='front/img/thumbnail3.jpg', alt='Thumbnail 1')
+                p
+                  a(href='#postlink') Read More
+              h4
+                a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            li
+              .ccr-thumbnail
+                img(src='front/img/thumbnail4.jpg', alt='Thumbnail 1')
+                p
+                  a(href='#postlink') Read More
+              h4
+                a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            li
+              .ccr-thumbnail
+                img(src='front/img/thumbnail5.jpg', alt='Thumbnail 1')
+                p
+                  a(href='#postlink') Read More
+              h4
+                a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            li
+              .ccr-thumbnail
+                img(src='front/img/thumbnail6.jpg', alt='Thumbnail 1')
+                p
+                  a(href='#postlink') Read More
+              h4
+                a(href='#postlink') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          // /.ccr-latest-post
+        .clearfix
+        nav.nav-paging
+          ul
+            li
+              a(href='#pre')
+                i.fa.fa-chevron-left
+            li
+              a(href='#') 1
+            li
+              a(href='#') 2
+            li
+              span.current 3
+            li
+              a(href='#') 4
+            li
+              a(href='#') 5
+            li
+              a(href='#next')
+                i.fa.fa-chevron-right
+
+        // /#ccr-latest-post-gallery
+        section.bottom-border
+        // /#bottom-border
+      // /.container
+    // / #ccr-main-section
+

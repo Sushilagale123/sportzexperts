@@ -1,0 +1,120 @@
+header#ccr-header
+  section#ccr-nav-top.fullwidth
+    div
+    .site-logo
+        a.navbar-brand(href='/')
+          img(src='front/img/logo.png', alt='Side Logo')
+      .container      
+        nav.top-menu
+          ul.left-top-menu
+            li
+              a(href='/') Home
+            li
+              a(href='#') Site Map
+            li
+              a(href='/contact') Contact
+          // /.left-top-menu
+          ul.right-top-menu.pull-right
+            li
+              a(href='/login') Login
+              //a(href="#",data-toggle="modal" data-target="#login-modal") Login
+            li
+              a(href='/register') Register
+            li.hidden
+              a(href='#') Subscribe
+            // li
+            //   form.form-inline(role='form', action='#')
+            //     input(type='search', placeholder='Search here...', required='')
+            //     button(type='submit')
+            //       i.fa.fa-search
+          // /.right-top-menu
+        // /.top-menu
+  // /#ccr-nav-top 
+  section#ccr-nav-main
+    nav.main-menu
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.ccr-nav-main')
+            i.fa.fa-bars
+          // /.navbar-toggle
+        // / .navbar-header
+        .collapse.navbar-collapse.ccr-nav-main
+          ul.nav.navbar-nav
+            li
+              a.active(href='/') Home
+            li.dropdown
+              a(href='#') Matches
+            li.dropdown
+              a(href='#') Tournament
+            li.dropdown
+              a(href='/teams') Teams
+            li.dropdown
+              a(href='#') Lates News
+            li.dropdown
+              a(href='#') Organiser
+            li.dropdown
+              a(href='/gallery') Gallery
+            li.dropdown
+              a(href='#') Live Video
+            li.dropdown
+              a(href='#') About Us
+                // /.sub-menu
+              // /.dropdown
+            //- for (var i = 0; i < menus.length; ++i) {
+                li= array[i]
+            //- }
+            li=menus
+          // /  .nav
+        // /  .collapse .navbar-collapse
+        #currentTime.pull-right.current-time
+          i.fa.fa-clock-o
+          span#time
+        script.
+            var d = new Date();
+            var n = d.getHours() + ":" +d.getMinutes();
+            document.getElementById("time").innerHTML =" "  + n;
+        // / #currentTime
+      // /.container
+    // /.main-menu
+  // / #ccr-nav-main
+  section#ccr-nav-below-main
+    nav.second-menu
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.ccr-nav-below-main')
+            i.fa.fa-bars
+          // /.navbar-toggle
+        // / .navbar-header
+        ////.collapse.navbar-collapse.ccr-nav-below-main
+          ul.nav.navbar-nav
+            li
+              a(href='#') Europe
+            li
+              a(href='#') USA
+            li
+              a(href='#') Middle East
+            li
+              a(href='#') Social and IT
+            li
+              a(href='#') Culture
+          /// /.nav /.navbar-nav
+        ////.ccr-language
+          ul
+            li Language:
+            li
+              a(href='#')
+                img(src='front/img/uk.png', alt='UK')
+                | English
+            li
+              a(href='#')
+                img(src='front/img/france.png', alt='France')
+                | France
+            li
+              a(href='#')
+                img(src='front/img/garman.png', alt='Garman')
+                | Garman
+        // /.ccr-language
+      // /.container
+    // /.second-menu
+  // / #ccr-nav-below-main
+// /#ccr-header

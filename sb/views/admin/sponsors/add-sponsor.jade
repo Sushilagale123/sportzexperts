@@ -1,0 +1,38 @@
+
+extends ../layout/base 
+block content
+    section#ccr-main-section
+        .container
+            section.col-md-12
+                .current-page
+                    a(href='/')
+                        i.fa.fa-home
+                        i.fa.fa-angle-double-right
+                        |  Create Sponsor
+                // / .current-page
+                section.ccr-team-form.col-md-10.col-md-offset-1
+                    form#commentform(action='#', method='post')
+                        input#column3(name='fname', type='text', placeholder='First Name', value='', required='')
+                        input#column3(name='mname', type='text', placeholder='Middel Name', value='', required='')
+                        input#column3(name='lname', type='text', placeholder='Last Name', value='', required='')
+                        input#author(name='company', type='text', placeholder='Company Name', value='', required='')
+                        input#column3(name='link', type='text', placeholder='Website', value='',required='')
+                        input#column3(name='logo', type='file', placeholder='Upload Logo', value='',required='')
+                        
+                        select#column3(name='team_id',  size='1' )
+
+                        select#column3(name='match_id' size='1' )
+                    
+                        //input#url(name='team_id', type='text', placeholder='Team', value='',required='')
+                        //input#url(name='match_id', type='text', placeholder='Match', value='',required='')
+                        //input#url(name='home-ground', type='password', placeholder='Home Ground', value='',required='')
+                        //input#author(name='type', type='password', placeholder='Type', value='',required='')
+                        //input#email(name='city_id', type='password', placeholder='City', value='',required='')
+                        //input#author(name='state_id', type='password', placeholder='State', value='',required='')
+                        //input#email(name='country_id', type='password', placeholder='Country', value='',required='')
+                        //input#url(name='status', type='password', placeholder='Status', value='',required='')
+                        //input#url(name='created', type='password', placeholder='Created', value='',required='')
+                        //input#url(name='modified', type='password', placeholder='Modified', value='',required='')
+                        
+                        input#submit.pull-right(name='submit', type='submit', value='Create')
+                        input#submit.pull-left(name='back', type='submit', value='Back')

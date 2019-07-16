@@ -1,0 +1,96 @@
+extends ../layout/base 
+block content 
+	section.content-header 
+		h1 
+			| Blank Page
+			small it all starts here
+		ol.breadcrumb 
+			li 
+				a(href='#') 
+					i.fa.fa-dashboard
+					| Level 
+			li.active Here 
+	section.content
+		.box
+			.box-header.with-border
+				h3.box-title
+					| Countries
+				.box-tools.pull-right
+					button(type='button', data-widget='collapse', data-toggle='tooltip',title='collapse').btn.btn-box-tool
+						i.fa.fa-minus
+			.box-body
+				- if(messages.msg_info)
+					.alert.alert-success.alert-dismissable
+						button.close(type='button', data-dismiss='alert', aria-hidden='true')
+							| ×
+						h4
+							i.icon.fa.fa-check
+							| Success!
+						| !{messages.msg_info}
+				- if(messages.msg_error)
+					.alert.alert-danger.alert-dismissable
+						button.close(type='button', data-dismiss='alert', aria-hidden='true')
+							| ×
+						h4
+							i.icon.fa.fa-ban
+							| Alert!
+						| !{messages.msg_error}
+				a(href='countries/add').pull-left.btn.btn-primary
+					i.fa.fa-plus 
+					|  Add Country
+				.data-table
+					table.table.table-bordered
+						tr
+							th
+								| No
+							th
+								| Name
+							th
+								| Iso Alpha2
+							th
+								| Iso Alpha3
+							th
+								| Iso Numeric
+							th
+								| Currency Code
+							th
+								| Currency Name
+							th
+								| Currency Symbol
+							th
+								| Flag
+							th
+								| Status
+							th
+								| Created
+							th
+								| Modified
+							th
+								| Action
+							if messages.msg_error
+								| !{messages.msg_error}
+							else
+								for row, index in data 
+									tr
+										td #{index+1}
+										td #{row.country}
+										td #{row.iso_alpha2}
+										td #{row.iso_alpha3}
+										td #{row.iso_numeric}
+										td #{row.currency_code}
+										td #{row.currency_name}
+										td #{row.currency_symbol}
+										td #{row.flag}
+										td #{row.status==0?"Visible":"Hidden"}
+										td #{row.created}
+										td #{row.modified}
+										td
+											div(style='display:inline-block')
+												a(href='/countries/edit/#{row.id}').btn.btn-sm.btn-primary
+														i.fa.fa-edit
+											| 
+											div(style='display:inline-block')
+												form(method='post', action='/countries/delete/#{row.id}')
+													input(type="hidden",name="_method", value="DELETE")
+													button.btn.btn-sm.btn-danger(type='submit')
+														i.fa.fa-remove

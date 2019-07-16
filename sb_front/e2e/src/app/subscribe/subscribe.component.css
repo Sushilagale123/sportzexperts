@@ -1,0 +1,15 @@
+.container{
+	padding: 20px;
+
+}
+.col-md-4
+	{
+		float: right;
+		background-color: #2cb2bc;
+		align-items: center;
+	}
+.subscribe-img {
+	width:500px;
+	height: 300px;
+
+}

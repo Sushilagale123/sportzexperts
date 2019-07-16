@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+var generate = require('../server/lib/generator');
