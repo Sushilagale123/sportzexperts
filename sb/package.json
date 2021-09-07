@@ -19,7 +19,7 @@
     "express-myconnection": "^1.0.4",
     "express-session": "^1.14.2",
     "express-validator": "^2.21.0",
-    "file-upload-with-preview": "^2.0.1",
+    "file-upload-with-preview": "^4.2.0",
     "jade": "~1.11.0",
     "jwt-simple": "^0.5.1",
     "knex": "^0.14.6",
